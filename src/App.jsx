@@ -4,7 +4,7 @@ import keyConceptsImage from './assets/images/key-concepts.png';
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
-import Header from './components/concepts/Header';
+import Header from './components/header/Header';
 import Concepts from './components/concepts/Concepts';
 
 const concepts = [
@@ -34,10 +34,8 @@ const concepts = [
 function App() {
   return (
     <>
-      <div>
-        <Header keyConceptsImage={keyConceptsImage} />
-        <Concepts concepts={concepts} />
-      </div>
+      <Header keyConceptsImage={keyConceptsImage} />
+      <Concepts concepts={concepts} />
     </>
   );
 }
