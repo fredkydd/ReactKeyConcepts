@@ -2,7 +2,7 @@
 'use strict';
 import './ConceptItem.css';
 
-const ConceptItem = ({ title, image, description }) => {
+export default function ConceptItem({ title, image, description }) {
   return (
     <>
       <li className="concept">
@@ -12,6 +12,4 @@ const ConceptItem = ({ title, image, description }) => {
       </li>
     </>
   );
-};
-
-export default ConceptItem;
+}

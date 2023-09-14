@@ -3,7 +3,7 @@
 import './Concepts.css';
 import ConceptItem from './ConceptItem';
 
-const Concepts = ({ concepts }) => {
+export default function Concepts({ concepts }) {
   return (
     <section id="concepts">
       {concepts.map((keys) => (
@@ -16,6 +16,4 @@ const Concepts = ({ concepts }) => {
       ))}
     </section>
   );
-};
-
-export default Concepts;
+}
